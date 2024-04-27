@@ -33,6 +33,7 @@ public class UserController {
     @PutMapping("/update/users/{userId}")
     public User updateUser(@PathVariable ("userId") int userId,  @RequestBody  User user){
         return userService.updateUser(userId , user);
+
     }
 
     @DeleteMapping("/delete/users/{userId}")
