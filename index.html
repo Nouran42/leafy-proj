@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leafy Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style2.css">
+    <style>
+      .image-with-text {
+          position: relative;
+          display: inline-block;
+          width: 100%;
+      }
+
+      .image-with-text img {
+          width: 100%;
+          height: auto;
+          display: block;
+      }
+
+      .text-overlay {
+          position: absolute;
+          top: 55%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+         /* background-color: rgba(255, 255, 255, 0.8);
+          padding: 10px;
+          border-radius: 5px;*/
+          text-align: center;
+          color: #32533b;
+          font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+
+      .text-overlay h1 {
+          font-size: 4vw; 
+          color: #32533b;
+          font-weight: 700;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+
+      @media (max-width: 768px) {
+          .text-overlay h1 {
+              font-size: 3vw; 
+          }
+      }
+  </style>
+
+</head>
+<body>
+  
+
+  <div class="container mt-2 ">
+      <div class="inner p-0 rounded-1" style="background-color: #fff;">
+            <img src="images/Leafy (2).png" alt="not found" class="leafyimg">
+            <div class="position-absolute top-0 end-0 mt-2   p-4">
+            
+              <img src="images/grocery-store (1).png" alt="Cart" class="cart-logo me-4 m">
+              <img src="images/farmer.png" alt="Account" class="account-logo">
+              
+              
+          </div>
+      </div>
+    
+  </div>
+  <!--<div class="container-fluid mt-2">
+    <button class="navbar-toggler d-lg-none ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</div> -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary  mainnav " >
+        <div class="container-fluid ml-auto mr-auto navv " style="color: white;">
+          
+          <button class="navbar-toggler iconn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse "  id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="product-category/plants/page/plants1.html">Plants</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pots And Planters</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link " href="#" >
+                  Garden Supplies
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Guides</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Detect</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link " href="#" >
+                  Gifts
+                </a>
+              </li>
+             
+            
+          </div>
+        </div>
+      </nav>
+      <div class="image-with-text">
+        <img src="images/blank-picture-frame-by-houseplant-corner-parquet-floor.jpg" alt="Your Image">
+        <div class="text-overlay">
+            <h1>Elevate <br> <br> Your <br> <br> Space</h1>
+            
+        </div>
+    </div>
+    <div class="row gx-5 ">
+      <!--<div class="col-md-1"></div>  -->
+      <div class="col-md-2 ">
+        <div class="card">
+          <div class="card-body text-center">
+            <button class="homebtn">
+              <img src="images/Untitled.png" alt="" class="img-fluid middleimg">
+              <h3 class="card-subtitle mb-1 mt-3 text-body-secondary">Fruit <br> Seeds</h3>
+              <p class="card-text" style="color: #8c8c8c;">Explore premium fruit seeds</p>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Duplicate the card structure three more times -->
+      <div class="col-md-2">
+        <div class="card">
+          <div class="card-body text-center">
+            <button class="homebtn">
+              <img src="images/eggplant.png" alt="" class="img-fluid middleimg">
+              <h3 class="card-subtitle mb-1 mt-3 text-body-secondary">Vegetable Seeds</h3>
+              <p class="card-text" style="color: #8c8c8c;">Explore premium vegetable seeds</p>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-2">
+        <div class="card">
+          <div class="card-body text-center">
+            <button class="homebtn">
+              <img src="images/pots.png" alt="" class="img-fluid middleimg">
+              <h3 class="card-subtitle mb-1 mt-3 text-body-secondary">Pots & Planters</h3>
+              <p class="card-text" style="color: #8c8c8c;">Explore our unique pots & planters</p>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-md-2">
+        <div class="card">
+          <div class="card-body text-center">
+            <button class="homebtn">
+              <img src="images/shadedPlant.png" alt="" class="img-fluid middleimg">
+              <h3 class="card-subtitle mb-1 mt-3 text-body-secondary">Shaded<br>Plants </h3>
+              <p class="card-text" style="color: #8c8c8c;">Explore Shaded area Plants </p>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-md-2">
+        <div class="card">
+          <div class="card-body text-center">
+            <button class="homebtn">
+              <img src="images/tools.png" alt="" class="img-fluid middleimg">
+              <h3 class="card-subtitle mb-1 mt-3 text-body-secondary">Gardening<br>Tools</h3>
+              <p class="card-text" style="color: #8c8c8c;">Explore our Gardening Tools</p>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-2">
+        <div class="card">
+          <div class="card-body text-center ">
+            <button class="homebtn">
+              <img src="images/resemary.png" alt="" class="img-fluid middleimg">
+              <h3 class="card-subtitle mb-1 mt-3 text-body-secondary">Herbs</h3>
+              <p class="card-text" style="color: #8c8c8c;">Explore our premium Herbs</p>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    
+     <!-- <div class="col-md-1"></div> -->
+    </div>
+    
+    <div class="row Guides">
+      <div class="row m-4 titles">
+        <h3>YOUR GUIDE</h3>
+      </div>
+     
+      <div class="col-md-4 col-sm-12 mb-4 mt-4"> 
+        <div class="card">
+          <div class="card-body">
+           <a href="" class="guidelink"> <img src="images/indoor-plants-studio (2).jpg" alt="" class="img-fluid guideimg">
+            <div class="text-block">
+             
+              <p>HOW TO TAKE CARE OF YOUR PLANTS</p>
+            </div> </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-12 mb-4 mt-4"> 
+        <div class="card">
+          <div class="card-body">
+            <a href="" class="guidelink"> <img src="images/indoor-plants-studio (1).jpg" alt="" class="img-fluid">
+              <div class="text-block">
+             
+                <p>YOUR GUIDE ABOUT CHOOSING <br> THE BEST POTS </p>
+              </div> </a> 
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-12 mb-4 mt-4"> 
+        <div class="card">
+          <div class="card-body">
+          <a href="" class="guidelink">  <img src="images/indoor.jpg" alt="" class="img-fluid"> 
+            <div class="text-block">
+             
+              <p>YOUR GUIDE FOR CHOOSING THE <br> BEST SHADED AREA PLANTS</p>
+            </div></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row "> 
+      <div class="row m-4 titles">
+        <h3>GIFTS</h3>
+      </div>
+      <div class="col-md-2 mb-4 mt-3">
+        <div class="card">
+          <div class="card-body">
+            <a href="" class="gifts">
+              <img src="images/gift voucher.png" alt="" class="img-fluid ">
+              <div class="text-center gifts">
+              <div class="card-text ">Digital Gift Voucher</div>
+              <div class="card-subtitle">400 EGP</div>
+            </div>
+            </a>
+          </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 mb-4 mt-3">
+          <div class="card">
+            <div class="card-body">
+              <a href="" class="gifts">
+                <img src="images/Untitled design.png" alt="" class="img-fluid ">
+                <div class="text-center gifts">
+                <div class="card-text ">Leafy Kit</div>
+                <div class="card-subtitle">740 EGP</div>
+              </div>
+              </a>
+            </div>
+            </div>
+          </div>
+
+          <div class="row detect">
+          
+            <div class="col-md-6 col-sm-12 detectp"> 
+                <h2>Discover Our Plant Disease Identification Tool!</h2> 
+                <div class="button-wrapper">
+                  <button onclick="" class="detectbutton">Explore</button> 
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12"> 
+              <img src="images/plantIdentification.jpg" alt="" class="plantpic">
+          </div>
+        </div>
+        
+          
+      
+
+        
+          <div class="image-with-text before-footer">
+            <img src="images/green-monstera-leaves-nature.jpg" alt="Your Image">
+            <div class="text-overlay2">
+              <h1>Leafy</h1>
+              <h3>We Provide our customer with premium plant collection, tools for gardening, and tool for detecting their plants!</h3>
+              <p>"Green Innovation Powered By Intellegence Growth"</p>
+            </div>
+          </div>
+
+        
+       
+        <footer class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <h5>Get in touch</h5>
+                <ul>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/about-us/">About us</a></li>
+                  <li><a href="/contact-us/">Contact us</a></li>
+                  <li><a href="/faq/">FAQ</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h5>Need Help?</h5>
+                <ul>
+                  <li><a href="/guides/">Leafy Guides</a></li>
+                  <li><a href="/payment-policy/">Payment policy</a></li>
+                  <li><a href="/shipping-policy/">Shipping policy</a></li>
+                  <li><a href="/returns-policy/">Returns policy</a></li>
+                  <li><a href="/terms-of-service/">Terms of service</a></li>
+                  <li><a href="/privacy-policy/">Privacy policy</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h5>Sell with us</h5>
+                <ul>
+                  <li><a href="/sell-with-us/">Sell with us</a></li>
+                </ul>
+                <h5>Wholesale</h5>
+                <ul>
+                  <li><a href="/bulk-orders/">Bulk Orders</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h5>Social media</h5>
+                <ul>
+                  <li><a target="" href="">Facebook</a></li>
+                  <li><a target="" href="">Instagram</a></li>
+                </ul>
+                <h5>Jobs at Leafy</h5>
+                <ul>
+                  <li><a href="/jobs/">Jobs</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+        
+
+   
+      <footer class="copyright">
+          <div class="container">
+              <div>Copyright © 2024 - Leafy. All rights reserved. </div>
+          
+                  </div>
+      
+      </footer>
+
+        </div>
+      
+        
+      
+     
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>

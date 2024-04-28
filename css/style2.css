@@ -1,0 +1,834 @@
+
+  *
+  {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+
+  } 
+   
+   .navbar-nav {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .navbar-nav .nav-link {
+        color: white !important;
+        margin: 0px 35px;
+        font-size: 22px;
+        transition: color 0.3s; 
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: rgb(23, 39, 25) !important; 
+    }
+
+    .navv {
+        background-color: rgb(107, 141, 110);
+    }
+    .wrapper
+    {
+      width: 95%;
+      /*margin: 0 auto;*/
+   
+      position: relative;
+      margin-left: 14em;
+     
+    }
+    
+    .firstnav
+    {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #search-container
+    {
+      margin: 1em 0;
+      display: flex;
+      align-items: center;
+    }
+    #search-container input
+    {
+      background-color: transparent;
+      width: 40%;
+      border-bottom:2px solid #110f29;
+      padding: 1em 0.3em;
+    }
+    #search-container input:focus
+    {
+      border-bottom-color: #739b7e;
+    }
+    #search-container button{
+      padding: 0.7em 2em;
+      margin-left: 1em;
+      background-color: #739b7e;
+      color:#ffff;
+      border-radius: 5px;
+      margin-top: 0.5em;
+    }
+
+    
+
+    .leafyimg
+    {
+        max-width: 200px; 
+        position: relative;
+        margin-left: 14em;
+       
+    }
+
+    .inner
+    {
+        max-width: 200px; 
+        margin: 0 auto; 
+        padding: 20px 0; 
+        text-align: center; 
+    }
+
+
+    .navbar-brand
+    { 
+        width: 100%;
+        height: 100%;
+       
+    
+    }
+    .navbar
+    {
+        margin-bottom: 0 !important;
+    }
+    .middleimg {
+        max-width: 100%; 
+        height: auto; 
+        opacity: 0.5;
+    }
+    .middleimg:hover {
+        opacity: 1;
+        transition: 0.45s;
+
+    }
+
+    .card
+    {
+        border: none;
+       
+     }
+    .homebtn
+    {
+        border: none;
+        background-color: white;
+    }
+    .container
+    {
+        display: flex;
+        min-height: 0px;
+    }
+    
+    .Guides
+    {
+        background-image: url(../images/monstera-leaves-with-palm-leaves-shadow-gray-background.jpg);
+        background-size:cover;
+    }
+    .titles
+    {
+        text-decoration:underline black;
+    }
+    .logos
+    {
+      background-color: white;
+      border: none;
+    }
+    .logos:hover{
+      background-color: transparent;
+    }
+    .logos:focus{
+      background-color: transparent;
+    }
+   
+
+    .guidelink:hover img
+    {
+      filter: brightness(50%);
+      transition: 0.45s;
+
+      
+    }
+   
+    
+    .text-block {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        background-color: rgb(95, 127, 101,.85);
+        color: white;
+        padding-left: 20px; 
+        padding-right: 20px;
+        padding-top: 10px;
+        border: white solid 5px ;
+        font-weight: bold;
+      
+      }
+    
+  .gifts{
+    text-decoration: none;
+    color: black;
+  }
+
+  .before-footer img
+  {
+    filter: brightness(70%);
+   
+  }
+  .no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+    
+  }
+  
+  .image-with-text {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-with-text img {
+    width: 100%;
+    height: auto;
+   
+  }
+  
+  .text-overlay2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .text-overlay2 h1 {
+    font-size: 70px;
+    margin-bottom: 30px;
+    font-weight: 700;
+  }
+  
+  .text-overlay2 h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .text-overlay2 p {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+  
+.footer{
+    background-color:rgb(95, 127, 101,.85) ;
+  
+}
+.footer .row {
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  .footer .col-md-3 {
+    flex: 1;
+    margin-right: 200px; 
+
+  }
+  
+  
+  .footer .col-md-3:last-child {
+    margin-right: 0;
+  }
+  .footer ul li {
+ 
+   justify-content: center;
+   list-style: none;
+ 
+  }
+  .footer h5 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+
+  }
+  .footer ul li a{
+ 
+   display: inline;
+   text-decoration: none;
+   color: #ffffff;
+   transition: color 0.3s; 
+  
+   }
+   .footer ul li a:hover{
+    color: #444;
+    
+
+   }
+
+ 
+  
+.copyright{
+    background-color: #444;
+}
+.copyright div
+{
+    width: 100%;
+    color: #ccc;
+    text-align: center !important;
+}
+.plantpic{
+    border-radius: 50%;
+    border: 4px solid #739b7e;
+    padding: 20px; 
+}
+
+.detect {
+    background-image: url(../images/monstera-leaves-with-palm-leaves-shadow-gray-background.jpg);
+    padding: 50px;
+    background-size: cover;
+    position: relative;
+}
+
+
+.detectp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+    text-align: center;
+}
+
+.detectp h2 {
+    font-weight: 800;
+}
+
+.button-wrapper {
+    margin-top: 20px;
+}
+.collapse button
+{
+  color: #444;
+}
+
+.detectbutton {
+    background-color: #444;
+    color: white;
+    border: 2px solid #444;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.detectbutton:hover {
+    background-color: #000000;
+    border-color: #555;
+    color: #fff;
+}
+.productcard img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    transition: background-image 0.5s ease;
+}
+
+.productimg1:hover{
+    content: url(../images/asianbayberry2.jpg);
+    width: 300px;
+    height: 300px;
+
+}
+
+
+.productimg2:hover{
+    content: url(../images/yellowelder2.jpg);
+    width: 300px;
+    height: 300px;
+
+}
+
+.productimg3:hover{
+    content: url(../images/nerveplant2.jpg);
+    width: 300px;
+    height: 300px;
+
+}
+.productimg4:hover{
+    content: url(../images/redstar2.jpg);
+    width: 300px;
+    height: 300px;
+
+}
+
+.productimg5:hover{
+    content: url(../images/ficushawaii2.jpg);
+    width: 300px;
+    height: 300px;
+   
+
+}
+
+.productimg6:hover{
+    content: url(../images/aloevera2.jpg);
+    width: 300px;
+    height: 300px;
+   
+
+}
+
+.productimg7:hover{
+    content: url(../images/murraya2.jpg);
+    width: 300px;
+    height: 300px;
+   
+
+}
+.productimg8:hover{
+    content: url(../images/warneckii2.jpg);
+    width: 300px;
+    height: 300px;
+   
+
+}
+.productimg9:hover{
+    content: url(../images/songofindia2.jpg);
+    width: 300px;
+    height: 300px;
+   
+
+}
+
+.productimg10:hover{
+  content: url(../images/lacefern2.jpg);
+  width: 300px;
+  height: 300px;
+ 
+
+}
+
+.productimg11:hover{
+  content: url(../images/snakeplant2.jpg);
+  width: 300px;
+  height: 300px;
+ 
+
+}
+.productimg12:hover{
+  content: url(../images/goldenpothos2.jpg);
+  width: 300px;
+  height: 300px;
+ 
+
+}
+.productimg13:hover{
+  content: url(../images/peacelily2.jpg);
+  width: 300px;
+  height: 300px;
+ 
+
+}
+.productimg14:hover{
+  content: url(../images/montaseraadansonii2.jpg);
+  width: 300px;
+  height: 300px;
+ 
+
+}
+.productimg15:hover{
+  content: url(../images/pothosnjoy2.jpg);
+  width: 300px;
+  height: 300px;
+ 
+
+}
+.productimg16:hover{
+  content: url(../images/zanzibargemraven2.jpg);
+  width: 300px;
+  height: 300px;
+ 
+
+}
+.productimg17:hover{
+  content: url(../images/bostonfern2.jpg);
+  width: 300px;
+  height: 300px;
+ 
+
+}
+.productimg18:hover{
+  content: url(../images/foxtailfern2.jpg);
+  width: 300px;
+  height: 300px;
+ 
+
+}
+.productimg19:hover{
+  content: url(../images/luckybamboo2.jpg);
+  width: 300px;
+  height: 300px;
+ 
+
+}
+
+.productimg20:hover{
+  content: url(../images/bamboopalm2.jpg);
+  width: 300px;
+  height: 300px;
+ 
+
+}
+.productimg21:hover{
+  content: url(../images/travellerspalm2.jpg);
+  width: 300px;
+  height: 300px;
+ 
+
+}
+.productimg22:hover{
+  content: url(../images/ponytailpalm2.jpg);
+  width: 300px;
+  height: 300px;
+ 
+
+}
+.productimg23:hover{
+  content: url(../images/arecapalm2.jpg);
+  width: 300px;
+  height: 300px;
+ 
+
+}
+.productimg24:hover{
+  content: url(../images/bunnyearscactus2.jpg);
+  width: 300px;
+  height: 300px;
+ 
+
+}
+.productimg25:hover{
+  content: url(../images/hairbrushcactus2.jpg);
+  width: 300px;
+  height: 300px;
+ 
+
+}
+
+
+
+.productcard
+{
+    text-align: center;
+}
+.productcard a
+{
+    text-decoration: none;
+}
+
+
+.card-body h5
+{
+font-weight:500;
+color: rgb(95, 127, 101);
+}
+.col-md-9 h2{
+    color: rgb(95, 127, 101);
+}
+.pagination-wrap {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.bar-styling {
+    list-style-type: none;
+    padding: 0;
+}
+
+.bar-styling li {
+    display: inline;
+    margin: 0 5px;
+}
+
+.page-numbers {
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.page-numbers:hover {
+    background-color: #f0f0f0;
+}
+
+.prev,
+.next {
+    font-weight: bold;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: transparent;
+}
+.current
+{
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #4d7650;
+    border: 2px solid #000000;
+    border-radius: 5px;
+  
+
+}  
+
+.accordion {
+    width: 100%;
+ 
+    margin-right:20px ;
+  }
+  
+  .accordion-item {
+    margin-bottom: 10px;
+  }
+  
+  .accordion-header {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .accordion-button {
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    color: #4d7650;
+    cursor: pointer;
+  }
+  
+  .accordion-button.collapsed {
+    background-color: #ffffff;
+  }
+  
+  .accordion-button:not(.collapsed) {
+    background-color: #ffffff;
+  }
+  
+  .accordion-body {
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    background-color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  
+  .accordion-body ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+
+  .accordion-body ul li {
+    margin-bottom: 5px;
+  }
+  
+
+  .accordion-body ul li button {
+    color: #525252;
+    text-decoration: none;
+    background-color: white;
+ }
+ .active
+ {
+  color:#739b7e !important;
+ }
+ .hide
+ {
+  display: none;
+ }
+ .accordion-body ul li a
+ {
+  text-decoration: none;
+ }
+  
+ 
+  .accordion-body ul li button:hover {
+    text-decoration:none ;
+    
+  }
+  
+
+  .accordion-body ul li hr {
+    margin: 5px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+  }
+  .listings
+  {
+    margin-left: 80px;
+  }
+.listings .row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .image-with-text {
+       
+        background-size:cover;
+        background-position: top;
+      }
+    
+      .text-overlay2 {
+        padding: 10px;
+      }
+    
+      .text-overlay2 h1 {
+        font-size: 20px;
+        margin-bottom: 5px;
+      }
+    
+      .text-overlay2 h3 {
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
+    
+      .text-overlay2 p {
+        font-size: 12px;
+      }
+      
+    .detect img {
+        display: none; 
+    }
+    
+    .productcard img
+    {
+        width: 200px;
+        height: 200px;
+    }
+    .productimg1:hover, .productimg2:hover, .productimg3:hover, .productimg4:hover,.productimg5:hover,.productimg6:hover,.productimg7:hover{
+        background-color: transparent;
+    }
+    .footer {
+        text-align: left;
+      }
+    
+      .footer .container {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    
+      .footer .container .row {
+        flex-direction: column;
+      }
+    
+      .footer .container .row .col-md-3 {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    
+      .footer h5 {
+       text-align: left;
+       margin-left: 10px;
+       font-weight: 100;
+       font-size:20px;
+      }
+      .col-md-2 {
+        flex: 0 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+        margin: 10px;
+    }
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+        
+    
+    }
+
+    .cart-logo, .account-logo {
+        width: 20px; 
+        height: 20px; 
+        margin-bottom: 20px;
+        padding-bottom: 0.3em;
+    }
+
+    .leafyimg{
+      max-width: 200px; 
+      display: block;
+      margin: 0 auto;
+    }
+    .iconn {
+        display: none !important;
+    }
+    .footer{
+        font-size: 10px;
+
+    }
+    .col-md-2 {
+        
+        flex: 0 0 calc(16.666% - 20px); 
+        max-width: calc(16.666% - 20px);
+        margin: 10px; 
+        margin-bottom: 10px;
+    
+    }
+    
+    
+      .category label {
+        font-size: 0.85rem; 
+      }
+    
+      .category option {
+        font-size: 0.85rem;
+        padding: 0.375rem 0.25rem;
+      }
+
+
+
+}
+
+    @media (max-width: 992px) {
+        .category{
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    
+        .listings {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-left: 0px;
+        }
+    }
+   
+
+
+    
+
+    body {
+        font-family: 'verdana';
+    }
+
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x:hidden ;
+
+    }
