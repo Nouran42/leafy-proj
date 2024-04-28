@@ -12,10 +12,8 @@ import java.util.Optional;
 
 @Service
 public  class UserServiceImp implements UserService{
-
     @Autowired
     private UserRepository userRepository;
-
     @Autowired
     private UserTypeRepository userTypeRepository;
     @Override
@@ -33,7 +31,6 @@ public  class UserServiceImp implements UserService{
     public List<User> fetchAllUsers() {
          return userRepository.findAll();
     }
-
     @Override
     public User getUserById(int userId) {
         Optional<User> user = userRepository.findById(userId);
@@ -43,7 +40,6 @@ public  class UserServiceImp implements UserService{
             return null;
         }
     }
-
     @Override
     public User updateUser(int userId, User user) {
         Optional<User> optionalUser = userRepository.findById(userId);
@@ -68,7 +64,6 @@ public  class UserServiceImp implements UserService{
             return null;
         }
     }
-
     @Override
     public boolean deleteUser(int userId) {
         if (userRepository.findById(userId).isPresent()){
