@@ -1,2 +1,0 @@
-# graduationProject
-Plant diseases detection 

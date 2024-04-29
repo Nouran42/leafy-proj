@@ -1,0 +1,108 @@
+#products
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 1.5em;
+
+}
+.card
+{
+    background-color: white;
+   
+  
+}
+.image-container
+{
+    text-align: center;
+}
+
+.seedimg1:hover{
+    content: url(../images/cherrytomatoseeds2.jpg);
+    width: 300px;
+    height: 300px;
+
+}
+.seedimg2:hover{
+    content: url(../images/tomatoseeds2.jpg);
+    width: 300px;
+    height: 300px;
+
+}
+.seedimg3:hover{
+    content: url(../images/cantaloupeseeds2.jpg);
+    width: 300px;
+    height: 300px;
+
+}
+.seedimg4:hover{
+    content: url(../images/strawberryseeds2.jpg);
+    width: 300px;
+    height: 300px;
+
+}
+.seedimg5:hover{
+    content: url(../images/cucumberseeds2.jpg);
+    width: 300px;
+    height: 300px;
+
+}
+.seedimg6:hover{
+    content: url(../images/celeryseeds2.jpg);
+    width: 300px;
+    height: 300px;
+
+}
+.seedimg7:hover{
+    content: url(../images/eggplantseeds2.jpg);
+    width: 300px;
+    height: 300px;
+
+}
+.seedimg8:hover{
+    content: url(../images/lettuceseeds2.jpg);
+    width: 300px;
+    height: 300px;
+
+}
+.seedimg9:hover{
+    content: url(../images/zucchiniseeds2.jpg);
+    width: 300px;
+    height: 300px;
+
+}
+.seedimg10:hover{
+    content: url(../images/carrotseeds2.jpg);
+    width: 300px;
+    height: 300px;
+
+}
+.seedimg11:hover{
+    content: url(../images/basilseeds2.jpg);
+    width: 300px;
+    height: 300px;
+
+}
+.seedimg12:hover{
+    content: url(../images/chiveseeds2.jpg);
+    width: 300px;
+    height: 300px;
+
+}
+.seedimg13:hover{
+    content: url(../images/dillseeds2.jpg);
+    width: 300px;
+    height: 300px;
+
+}
+.seedimg14:hover{
+    content: url(../images/parsleyseeds2.jpg);
+    width: 300px;
+    height: 300px;
+
+}
+.seedimg15:hover{
+    content: url(../images/thymeseeds2.jpg);
+    width: 300px;
+    height: 300px;
+
+}

@@ -25,7 +25,7 @@ let products = {
         },
         {
             productName: "ficus hawaii",
-            category: "houseplants",
+            category: "airpurifyingplants",
             price: "250",
             image: "ficushawaii.jpg"
         },
@@ -67,7 +67,7 @@ let products = {
         },
         {
             productName: "golden pothos",
-            category: "shadedareaplants airpurifyingplants",
+            category: "airpurifyingplants",
             price: "220",
             image: "goldenpothos.jpg"
         },
@@ -160,41 +160,57 @@ let products = {
 };
 
 
-for (let i = 0; i < products.data.length; i++) {
-    let card = document.createElement("div");
-    card.classList.add("col"); 
-   
-   // card.id = products.data[i].category;
+let index = 0;
+for (let i of products.data) {
     
-    card.innerHTML = `
-        <div class="card h-100 hide ${products.data[i].category}" >
-            <a href="">
-                <img src="../../../images/${products.data[i].image}" class="card-img-top productimg${i + 1}" alt="...">
-                <div class="card-body mt-4">
-                    <h5 class="card-title product-name">${products.data[i].productName.toUpperCase()}</h5>
-                    <p class="card-text">EGP ${products.data[i].price}.00</p>
-                </div>
-            </a>
-        </div>
-    `;
-  
+    
+    let card = document.createElement("div");
+    card.classList.add("card", i.category,"hide");
+    
+   let imgContainer = document.createElement("div");
+    imgContainer.classList.add("image-container");
+    
+   let image = document.createElement("img");
+    image.setAttribute("src", `../../../images/${i.image}`);
+    image.classList.add("card-img-top", `productimg${index + 1}`);
+    image.alt = "product img";
+    
+    let cardBody = document.createElement("div");
+    cardBody.classList.add("card-body", "mt-4");
+    
+    let title = document.createElement("h5");
+    title.classList.add("card-title", "product-name");
+    title.textContent = i.productName.toUpperCase();
+    
+    let price = document.createElement("p");
+    price.classList.add("card-text");
+    price.textContent = `EGP ${i.price}.00`;
+    
+    cardBody.appendChild(title);
+    cardBody.appendChild(price);
+    imgContainer.appendChild(image);
+    imgContainer.appendChild(cardBody);
+    card.appendChild(imgContainer);
+    
     document.getElementById("products").appendChild(card);
+    index++;
 }
 
 function filterProduct(value)
 {
+    let mainTitle=document.getElementById("main-title");
    let buttons=document.querySelectorAll(".button-value");
    buttons.forEach((button) =>{
     if(value.toUpperCase()==button.innerText.toUpperCase().replace(/\s/g,'')){
         button.classList.add("active");
+        mainTitle.innerText=button.innerText.toUpperCase();
+
     }
     else{
         button.classList.remove("active");
     }
    });
-
-
-  let elements=document.querySelectorAll(".card");
+   let elements=document.querySelectorAll(".card");
    elements.forEach((element=>{
     if(value=="allplants"){
          element.classList.remove("hide");
@@ -202,7 +218,7 @@ function filterProduct(value)
     else{
         if (element.classList.contains(value)) {
             element.classList.remove("hide");
-            element.style.display="block";
+          
             
         } else {
             element.classList.add("hide");
@@ -212,9 +228,14 @@ function filterProduct(value)
    }));
 }
 
+
 window.onload=()=>{
     filterProduct("allplants");
 }
+
+
+
+
 
 document.getElementById("search").addEventListener("click",()=>{
     let searchInput=document.getElementById("search-input").value;
@@ -232,4 +253,4 @@ document.getElementById("search").addEventListener("click",()=>{
         }
     })
 
-})
+});
