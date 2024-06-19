@@ -2,7 +2,6 @@
 {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-column-gap: 1.5em;
 
 }
 .card
@@ -11,9 +10,24 @@
    
   
 }
+.card a
+{
+    color: rgb(76, 76, 76);
+}
+.card .product-name{
+    transition: 0.5s;
+}
+.card .product-name:hover
+{
+   opacity: 0.6;
+}
 .image-container
 {
     text-align: center;
+}
+.navbar-brand {
+    display: flex;
+    align-items: center; 
 }
 
 .seedimg1:hover{
@@ -105,4 +119,307 @@
     width: 300px;
     height: 300px;
 
+}
+.container-fluid {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    margin-right: auto; 
+}
+.soilimg1:hover{
+    content: url(../images/claypeppels2.jpg);
+    width: 300px;
+    height: 300px;
+
+}
+.soilimg2:hover{
+    content: url(../images/cocopeat2.jpg);
+    width: 300px;
+    height: 300px;
+
+}
+.soilimg3:hover{
+    content: url(../images/perlite2.jpg);
+    width: 300px;
+    height: 300px;
+
+}
+.soilimg4:hover{
+    content: url(../images/pottingsoil2.jpg);
+    width: 300px;
+    height: 300px;
+
+}
+.soilimg5:hover{
+    content: url(../images/seedstartingmix2.jpg);
+    width: 300px;
+    height: 300px;
+
+}
+.soilimg6:hover{
+    content: url(../images/vermiculite2.jpg);
+    width: 300px;
+    height: 300px;
+
+}
+.soilimg7:hover{
+    content: url(../images/9wayspraynozzle2.jpg);
+    width: 300px;
+    height: 300px;
+
+}
+.soilimg8:hover{
+    content: url(../images/gardenfork2.jpg);
+    width: 300px;
+    height: 300px;
+
+}
+.soilimg9:hover{
+    content: url(../images/gardenhandtrowel2.jpg);
+    width: 300px;
+    height: 300px;
+
+}
+.soilimg10:hover{
+    content: url(../images/gardenhat2.jpg);
+    width: 300px;
+    height: 300px;
+
+}
+.soilimg11:hover{
+    content: url(../images/gardeninggloves2.jpg);
+    width: 300px;
+    height: 300px;
+
+}
+.soilimg12:hover{
+    content: url(../images/plantstake2.jpg);
+    width: 300px;
+    height: 300px;
+
+}
+.soilimg13:hover{
+    content: url(../images/pruningshears2.jpg);
+    width: 300px;
+    height: 300px;
+
+}
+
+.soilimg14:hover{
+    content: url(../images/wheelbarrow2.jpg);
+    width: 300px;
+    height: 300px;
+
+}
+
+.product-card-title
+{
+    color:#567f59;
+}
+.product-card-price
+{
+    color: #567f59;
+    margin-bottom: 25px;
+}
+.product-card-desc
+{
+    color: gray;
+    margin-bottom: 50px;
+}
+.product-card-quantity
+{
+    width: 3.5rem;
+    height: 3rem;
+    border: 1px solid #ced4da; 
+    border-radius: 0.25rem; 
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem; 
+    line-height: 1.5;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; 
+    box-sizing: border-box; 
+}
+
+.product-card-quantity:focus {
+    border-color: #80bdff; 
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); 
+}
+
+.product-card-button
+{
+    width: 7rem;
+    height: 3.2rem;
+    background-color: #536e4f;
+    color: white;
+    border-radius: 7px;
+    transition: 0.3s ease-in ;
+    margin-left: 50px;
+
+}
+.additional-images img{
+    width: 210px;
+    height: 200px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    opacity: 0.5;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.additional-images img:hover{
+   opacity: 1;
+}
+.imgPart img{
+    width: 600px;
+    height: 600px;
+
+}
+.leavline
+{
+    height: 8rem;
+}
+.product-card-button:hover
+{
+   
+    background-color: #293827;
+}
+.quantity-container {
+    display: flex;
+    align-items: center;
+   /* justify-content: space-between;*/
+    
+}
+
+.wrapper3
+{
+    height: 50px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+
+}
+
+.wrapper3 span{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.wrapper3 span .num
+{
+    font-size: 10px;
+    border-right: 2px solid rgba(0, 0, 0, 0.293);
+    border-left: 2px solid rgba(0,0,0,0.2);
+    pointer-events: none;
+}
+
+.plant-details th
+{
+    color: #567f59;
+}
+.plant-details td
+{
+    color: #484d48cf;
+}
+.cart-counter {
+    background: rgb(27, 54, 24);
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    padding: 0.3em 0.5em;
+    top: 5px;
+    right: 8px;
+    font-size: smaller;
+}
+.carth2
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 200;
+    color: #536e4f;
+    margin-top: 20px;
+
+}
+.cart-container {
+    padding: 20px;
+}
+.cart-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+.cart-total {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.guides-header
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #536e4f;
+    font-weight: 300;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+@media (max-width:720px)
+{
+    .card img{
+        max-width: 100%;
+        object-fit: contain;
+        /*height: 15em;*/
+        margin-bottom: -40px;
+    }
+    .card
+    {
+        max-width: 1000px;
+        margin-top: 1em;
+
+    }
+    #products
+    {
+        grid-template-columns: auto auto;
+        grid-column-gap: 1px;
+    }
+    .product-name{
+        font-size: 15px;
+    }
+    #main-title
+    {
+        font-size: 25px;
+        margin-top: 2em;
+    }
+    .quantity-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quantity-container .wrapper3, .quantity-container .product-card-button {
+        margin: 5px 0;
+    }
+.imgPart img
+{
+    width: 200px;
+    height: 250px;
+}
+
+  .additional-images img
+  {
+    height: 100px;
+    width: 120px;
+  }
+.product-details
+{
+    flex-direction: column;
+}
 }

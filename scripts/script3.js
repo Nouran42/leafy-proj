@@ -1,96 +1,91 @@
 let products={
     data:[
         {
-            productName:"Cherry Tomato Seeds",
-            category:"Fruitseeds",
+            productName:"Clay Peppels",
+            category:"soil",
             price:"70",
-            image:"cherrytomatoseeds.jpg"
+            image:"claypeppels.jpg"
 
         },
         {
-            productName:"Tomato Seeds",
-            category:"Fruitseeds",
+            productName:"Coco Peat",
+            category:"soil",
             price:"50",
-            image:"tomatoseeds.jpg"
+            image:"cocopeat.jpg"
         },
         {
-            productName:"Cantaloupe Seeds",
-            category:"Fruitseeds",
+            productName:"Perlite",
+            category:"soil",
             price:"80",
-            image:"cantaloupeseeds.jpg"
+            image:"perlite.jpg"
         },
         {
-            productName:"Strawberry Seeds",
-            category:"Fruitseeds",
+            productName:"Potting Soil",
+            category:"soil",
             price:"40",
-            image:"strawberryseeds.jpg"
+            image:"pottingsoil.jpg"
         },
         {
-            productName:"Cucumber Seeds",
-            category:"Vegetableseeds",
+            productName:"Seed Starting Mix",
+            category:"soil",
             price:"60",
-            image:"cucumberseeds.jpg"
+            image:"seedstartingmix.jpg"
         },
         {
-            productName:"Celery Seeds",
-            category:"Vegetableseeds",
+            productName:"Vermiculite",
+            category:"soil",
             price:"40",
-            image:"celeryseeds.jpg"
+            image:"vermiculite.jpg"
         },
         {
-            productName:"Eggplant Seeds",
-            category:"Vegetableseeds",
-            price:"45",
-            image:"eggplantseeds.jpg"
+            productName:"9 Way Spray Nozzle",
+            category:"toolsandequipment",
+            price:"250",
+            image:"9wayspraynozzle.jpg"
         },
         {
-            productName:"Lettuce Seeds",
-            category:"Vegetableseeds",
-            price:"45",
-            image:"lettuceseeds.jpg"
+            productName:"Graden Fork",
+            category:"toolsandequipment",
+            price:"145",
+            image:"gardenfork.jpg"
         },
         {
-            productName:"Zucchini Seeds",
-            category:"Vegetableseeds",
-            price:"60",
-            image:"zucchiniseeds.jpg"
+            productName:"Garden Hand Trowel",
+            category:"toolsandequipment",
+            price:"100",
+            image:"gardenhandtrowel.jpg"
         },
         {
-            productName:"Carrot Seeds",
-            category:"Vegetableseeds",
-            price:"65",
-            image:"carrotseeds.jpg"
+            productName:"Garden Hat",
+            category:"toolsandequipment",
+            price:"165",
+            image:"gardenhat.jpg"
         },
         {
-            productName:"Basil Seeds",
-            category:"Herbseeds",
-            price:"65",
-            image:"basilseeds.jpg"
+            productName:"Gardening Gloves",
+            category:"toolsandequipment",
+            price:"85",
+            image:"gardeninggloves.jpg"
         },
         {
-            productName:"Chives Seeds",
-            category:"Herbseeds",
-            price:"80",
-            image:"chiveseeds.jpg"
+            productName:"Plant Stake",
+            category:"toolsandequipment",
+            price:"70",
+            image:"plantstake.jpg"
         },
         {
-            productName:"Dill Seeds",
-            category:"Herbseeds",
-            price:"65",
-            image:"dillseeds.jpg"
+            productName:"Pruning Shears",
+            category:"toolsandequipment",
+            price:"200",
+            image:"pruningshears.jpg"
         },
         {
-            productName:"Parsley Seeds",
-            category:"Herbseeds",
-            price:"25",
-            image:"Parsleyseeds.jpg"
+            productName:"Wheel Barrow",
+            category:"toolsandequipment",
+            price:"1400",
+            image:"wheelbarrow.jpg"
         },
-        {
-            productName:"Thyme Seeds",
-            category:"Herbseeds",
-            price:"60",
-            image:"thymeseeds.jpg"
-        }
+       
     ]
     
 };
@@ -110,7 +105,7 @@ for (let i of products.data) {
 
     let image = document.createElement("img");
     image.setAttribute("src", `../../images/${i.image}`);
-    image.classList.add("card-img-top", `seedimg${index + 1}`);
+    image.classList.add("card-img-top", `soilimg${index + 1}`);
     image.alt = "product img";
 
     let cardBody = document.createElement("div");
@@ -152,7 +147,7 @@ function filterProduct(value)
    });
    let elements=document.querySelectorAll(".card");
    elements.forEach((element=>{
-    if(value=="allseeds"){
+    if(value=="allgardensupplies"){
          element.classList.remove("hide");
     }
     else{
@@ -169,7 +164,7 @@ function filterProduct(value)
 }
 
 window.onload=()=>{
-    filterProduct("allseeds");
+    filterProduct("allgardensupplies");
 }
 
 

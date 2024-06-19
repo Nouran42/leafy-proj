@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - Leafy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style2.css">
+    <link rel="stylesheet" href="../css/style3.css">
+    <style>
+        .container2 {
+            padding: 20px;
+            margin: 20px auto;
+            background-color: white;
+            max-width: 800px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart-header {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table th, table td {
+            padding: 15px;
+            text-align: left;
+            vertical-align: middle;
+            border-bottom: 1px solid #ddd;
+        }
+
+        table th {
+            background-color: #f1f1f1;
+            text-align: center;
+        }
+
+        table td img {
+            width: 80px;
+            height: 80px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        table td .quantity {
+            width: 60px;
+            text-align: center;
+        }
+
+        table td.subtotal {
+            text-align: right;
+            font-weight: bold;
+        }
+
+        .cart-totals {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f8f8f8;
+            border-radius: 5px;
+        }
+
+        .cart-totals .total, .cart-totals .subtotal {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .cart-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .cart-buttons button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .cart-buttons button:hover {
+            background-color: #3e8e41;
+        }
+
+        @media (max-width: 768px) {
+            .cart-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .cart-buttons button {
+                margin-bottom: 10px;
+            }
+
+            table th, table td {
+                padding: 10px;
+                font-size: 0.9em;
+            }
+
+            table td img {
+                width: 60px;
+                height: 60px;
+            }
+
+            .cart-totals .total, .cart-totals .subtotal {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header class="primary-header">
+    <div class="wrapper2">
+        <div class="primary-header__inner">
+            <span class="logo">
+                <img src="../images/leafy (3).png" alt="Leafy Logo" style="max-width: 110px;" class="logoo">
+            </span>
+            <ul class="nav-list" style="padding-top: 10px;">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../product-category/plants/plants1.html">Plants</a></li>
+                <li><a href="../seeds/seeds.html">Seeds</a></li>
+                <li><a href="../Garden Supplies/gardensupplies.html">Garden Supplies</a></li>
+                <li><a href="#">Detect</a></li>
+                <li><a href="../cart/cart.html" class="disabled"><img src="../images/grocery-store (1).png" alt="Cart" width="30" height="30"></a></li>
+                <li><a href="#"><img src="../images/farmer.png" alt="Farmer" width="30" height="32"></a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div class="container2 cart-container">
+    <h2 class="cart-header">Your Cart</h2>
+    <p class="text-center"></p>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ITEM</th>
+                <th>DESCRIPTION</th>
+                <th>UNIT PRICE</th>
+                <th>QUANTITY</th>
+                <th>SUBTOTAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="cart-item">
+                <td><img src="" alt=""></td>
+                <td class="item-name"></td>
+                <td class="item-price"></td>
+                <td>
+                    <input type="number" value="1" min="1" class="quantity" onchange="updateSubtotal(this)">
+                </td>
+                <td class="subtotal"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="cart-totals">
+        <div class="row">
+            <div class="col-6">Subtotal</div>
+            <div class="col-6 text-end subtotal-value"></div>
+        </div>
+        <div class="row">
+            <div class="col-6">Total</div>
+            <div class="col-6 text-end total-value"></div>
+        </div>
+        <p>Shipping fees are calculated upon address selection.</p>
+    </div>
+
+    <div class="cart-buttons">
+        <button onclick="continueShopping()">Continue shopping</button>
+        <button onclick="proceedToCheckout()">Proceed to checkout</button>
+    </div>
+</div>
+
+<script>
+    function updateSubtotal(element) {
+        const quantity = parseInt(element.value);
+        const unitPrice = 1; 
+        const subtotal = unitPrice * quantity;
+        const subtotalElement = element.closest('tr').querySelector('.subtotal');
+        subtotalElement.textContent = `EGP ${subtotal.toFixed(2)}`;
+
+        document.querySelector('.subtotal-value').textContent = `EGP ${subtotal.toFixed(2)}`;
+        document.querySelector('.total-value').textContent = `EGP ${subtotal.toFixed(2)}`;
+    }
+
+    function continueShopping() {
+        window.location.href = '../product-category/plants/plants1.html';
+    }
+
+    function proceedToCheckout() {
+        alert('Proceeding to checkout...');
+    }
+</script>
+
+</body>
+</html>

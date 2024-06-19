@@ -6,7 +6,8 @@
     <title>Leafy Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style2.css">
-    <style>
+
+        <style>
       .image-with-text {
           position: relative;
           display: inline-block;
@@ -38,36 +39,114 @@
           font-weight: 700;
           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       }
+      .titles-text{
+        max-width: 100%;
+      }
 
       @media (max-width: 768px) {
+        *{
+          overflow-x: hidden;
+        }
           .text-overlay h1 {
               font-size: 3vw; 
           }
+          .index-product-row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+          }
+          .my-col {
+          
+            flex: 0 0 calc(50% - 10px); /* Adjust the width as needed */
+            max-width: calc(50% - 10px);
+            margin: 5px;
+    
+          }
+          .index-text{
+            font-size: 0.9em;
+          }
+          .index-subtitle
+          {
+            font-size: 1.2em;
+            font-weight:300;
+          }
+          .titles{
+            margin-left: 0;
+          }
+          .titles-text
+          {
+            margin-left:-15px;
+            font-size: 1.2em;
+           
+          }
+       
       }
   </style>
 
 </head>
 <body>
-  
 
-  <div class="container mt-2 ">
-      <div class="inner p-0 rounded-1" style="background-color: #fff;">
-            <img src="images/Leafy (2).png" alt="not found" class="leafyimg">
-            <div class="position-absolute top-0 end-0 mt-2   p-4">
-            
-              <img src="images/grocery-store (1).png" alt="Cart" class="cart-logo me-4 m">
-              <img src="images/farmer.png" alt="Account" class="account-logo">
-              
-              
-          </div>
+
+
+
+ <header class="primary-header">
+    <div class="wrapper2">
+    <div class="primary-header__inner">
+        <span class="logo"><img src="images/leafy (3).png" alt="" style="max-width: 110px;" class="logoimg"></span>
+        <ul class="nav-list" style="padding-top: 10px;">
+          <li><a href="" class="disabled">Home</a></li>
+          <li><a href="product-category/plants/plants1.html">Plants</a></li>
+          <li><a href="product-category/seeds/seeds.html">Seeds</a></li>
+          <li><a href="product-category/Garden Supplies/gardensupplies.html">Garden Supplies</a></li>
+          <li><a href="#">Detect</a></li>
+          <li><span><form class="d-flex">
+            <input class="form-control" type="search" placeholder="Search.." aria-label="Search" style="padding-bottom: 10px; height: 2.2rem; width: 7rem;">
+            <button class="btn btn-outline-success" type="submit" style="margin-left: 10px;  height: 2.2rem; ">Search</button>
+          </form> </span> </li>
+
+          <li><a href="#"><img src="images/grocery-store (1).png" alt="" width="30" height="30"></a></li>
+          <div class="dropdown" style="margin-top: -5px;">
+            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="images/farmer.png" alt="" width="30" height="32">
+            </a>
+          
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../../account/login.html">login</a></li>
+              <li><a class="dropdown-item" href="../../account/register.html">sign up</a></li>          
+          </div> 
+        </ul>
       </div>
-    
-  </div>
+      
+    </div>
+  </header> 
+
+  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+        <img src="images/Leafy (2).png" alt="not found" class="leafyimg intro2 mx-auto">
+      </a>
+     
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success me-2" type="button">Account</button>
+          <button class="btn btn-outline-primary" type="button">Cart</button>
+        </form>
+      </div>
+    </div>
+  </nav> -->
+  
+  
   <!--<div class="container-fluid mt-2">
     <button class="navbar-toggler d-lg-none ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-</div> -->
+</div>
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary  mainnav " >
         <div class="container-fluid ml-auto mr-auto navv " style="color: white;">
@@ -78,13 +157,13 @@
           <div class="collapse navbar-collapse "  id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="product-category/plants/page/plants1.html">Plants</a>
+                <a class="nav-link " aria-current="page" href="product-category/plants/plants1.html">Plants</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pots And Planters</a>
+                <a class="nav-link" href="product-category/">Pots And Planters</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link " href="#" >
+                <a class="nav-link " href="product-category/Garden Supplies/gardensupplies.html" >
                   Garden Supplies
                 </a>
               </li>
@@ -95,92 +174,91 @@
                 <a class="nav-link" href="#">Detect</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link " href="#" >
+                <a class="nav-link " href="#gifts" >
                   Gifts
                 </a>
-              </li>
+              </li> 
              
             
           </div>
         </div>
-      </nav>
-      <div class="image-with-text">
+      </nav> -->
+      <div class="image-with-text intro">
         <img src="images/blank-picture-frame-by-houseplant-corner-parquet-floor.jpg" alt="Your Image">
         <div class="text-overlay">
             <h1>Elevate <br> <br> Your <br> <br> Space</h1>
             
         </div>
     </div>
-    <div class="row gx-5 ">
+    <div class="row gx-5 index-product-row">
       <!--<div class="col-md-1"></div>  -->
-      <div class="col-md-2 ">
-        <div class="card">
+      <div class="col-md-2 my-col">
+        <div class="card fade-in">
           <div class="card-body text-center">
             <button class="homebtn">
               <img src="images/Untitled.png" alt="" class="img-fluid middleimg">
-              <h3 class="card-subtitle mb-1 mt-3 text-body-secondary">Fruit <br> Seeds</h3>
-              <p class="card-text" style="color: #8c8c8c;">Explore premium fruit seeds</p>
+              <h3 class="card-subtitle mb-1 mt-3 text-body-secondary index-subtitle">Fruit <br> Seeds</h3>
+              <p class="card-text index-text" style="color: #8c8c8c;">Explore premium fruit seeds</p>
             </button>
           </div>
         </div>
       </div>
     
-      <!-- Duplicate the card structure three more times -->
-      <div class="col-md-2">
-        <div class="card">
+      <div class="col-md-2 my-col">
+        <div class="card fade-in ">
           <div class="card-body text-center">
             <button class="homebtn">
               <img src="images/eggplant.png" alt="" class="img-fluid middleimg">
-              <h3 class="card-subtitle mb-1 mt-3 text-body-secondary">Vegetable Seeds</h3>
-              <p class="card-text" style="color: #8c8c8c;">Explore premium vegetable seeds</p>
+              <h3 class="card-subtitle mb-1 mt-3 text-body-secondary index-subtitle">Vegetable Seeds</h3>
+              <p class="card-text index-text" style="color: #8c8c8c;">Explore premium vegetable seeds</p>
             </button>
           </div>
         </div>
       </div>
       
-      <div class="col-md-2">
-        <div class="card">
+      <div class="col-md-2 my-col">
+        <div class="card fade-in">
           <div class="card-body text-center">
             <button class="homebtn">
               <img src="images/pots.png" alt="" class="img-fluid middleimg">
-              <h3 class="card-subtitle mb-1 mt-3 text-body-secondary">Pots & Planters</h3>
-              <p class="card-text" style="color: #8c8c8c;">Explore our unique pots & planters</p>
+              <h3 class="card-subtitle mb-1 mt-3 text-body-secondary index-subtitle">Pots & Planters</h3>
+              <p class="card-text index-text" style="color: #8c8c8c;">Explore our unique pots & planters</p>
             </button>
           </div>
         </div>
       </div>
     
-      <div class="col-md-2">
-        <div class="card">
+      <div class="col-md-2 my-col">
+        <div class="card fade-in ">
           <div class="card-body text-center">
             <button class="homebtn">
               <img src="images/shadedPlant.png" alt="" class="img-fluid middleimg">
-              <h3 class="card-subtitle mb-1 mt-3 text-body-secondary">Shaded<br>Plants </h3>
-              <p class="card-text" style="color: #8c8c8c;">Explore Shaded area Plants </p>
+              <h3 class="card-subtitle mb-1 mt-3 text-body-secondary index-subtitle">Shaded<br>Plants </h3>
+              <p class="card-text index-text" style="color: #8c8c8c;">Explore Shaded area Plants </p>
             </button>
           </div>
         </div>
       </div>
     
-      <div class="col-md-2">
-        <div class="card">
+      <div class="col-md-2 my-col">
+        <div class="card fade-in">
           <div class="card-body text-center">
             <button class="homebtn">
               <img src="images/tools.png" alt="" class="img-fluid middleimg">
-              <h3 class="card-subtitle mb-1 mt-3 text-body-secondary">Gardening<br>Tools</h3>
-              <p class="card-text" style="color: #8c8c8c;">Explore our Gardening Tools</p>
+              <h3 class="card-subtitle mb-1 mt-3 text-body-secondary index-subtitle">Gardening<br>Tools</h3>
+              <p class="card-text index-text" style="color: #8c8c8c;">Explore our Gardening Tools</p>
             </button>
           </div>
         </div>
       </div>
 
-      <div class="col-md-2">
-        <div class="card">
+      <div class="col-md-2 my-col">
+        <div class="card fade-in">
           <div class="card-body text-center ">
             <button class="homebtn">
               <img src="images/resemary.png" alt="" class="img-fluid middleimg">
-              <h3 class="card-subtitle mb-1 mt-3 text-body-secondary">Herbs</h3>
-              <p class="card-text" style="color: #8c8c8c;">Explore our premium Herbs</p>
+              <h3 class="card-subtitle mb-1 mt-3 text-body-secondary index-subtitle">Herbs</h3>
+              <p class="card-text index-text" style="color: #8c8c8c;">Explore our premium Herbs</p>
             </button>
           </div>
         </div>
@@ -192,11 +270,11 @@
     
     <div class="row Guides">
       <div class="row m-4 titles">
-        <h3>YOUR GUIDE</h3>
+        <h3 class="titles-text">YOUR GUIDE</h3>
       </div>
      
       <div class="col-md-4 col-sm-12 mb-4 mt-4"> 
-        <div class="card">
+        <div class="card fade-in">
           <div class="card-body">
            <a href="" class="guidelink"> <img src="images/indoor-plants-studio (2).jpg" alt="" class="img-fluid guideimg">
             <div class="text-block">
@@ -208,9 +286,9 @@
       </div>
 
       <div class="col-md-4 col-sm-12 mb-4 mt-4"> 
-        <div class="card">
+        <div class="card fade-in">
           <div class="card-body">
-            <a href="" class="guidelink"> <img src="images/indoor-plants-studio (1).jpg" alt="" class="img-fluid">
+            <a href="guides/bestPotsGuide.html" class="guidelink"> <img src="images/indoor-plants-studio (1).jpg" alt="" class="img-fluid">
               <div class="text-block">
              
                 <p>YOUR GUIDE ABOUT CHOOSING <br> THE BEST POTS </p>
@@ -220,7 +298,7 @@
       </div>
 
       <div class="col-md-4 col-sm-12 mb-4 mt-4"> 
-        <div class="card">
+        <div class="card fade-in">
           <div class="card-body">
           <a href="" class="guidelink">  <img src="images/indoor.jpg" alt="" class="img-fluid"> 
             <div class="text-block">
@@ -233,12 +311,12 @@
 
     </div>
 
-    <div class="row "> 
+    <div class="row " id="gifts"> 
       <div class="row m-4 titles">
         <h3>GIFTS</h3>
       </div>
       <div class="col-md-2 mb-4 mt-3">
-        <div class="card">
+        <div class="card fade-in">
           <div class="card-body">
             <a href="" class="gifts">
               <img src="images/gift voucher.png" alt="" class="img-fluid ">
@@ -252,7 +330,7 @@
         </div>
 
         <div class="col-md-2 mb-4 mt-3">
-          <div class="card">
+          <div class="card fade-in">
             <div class="card-body">
               <a href="" class="gifts">
                 <img src="images/Untitled design.png" alt="" class="img-fluid ">
@@ -267,14 +345,14 @@
 
           <div class="row detect">
           
-            <div class="col-md-6 col-sm-12 detectp"> 
-                <h2>Discover Our Plant Disease Identification Tool!</h2> 
+            <div class="col-md-6 col-sm-12 detectp slide-in from-left "> 
+                <h2 class=" ">Discover Our Plant Disease Identification Tool!</h2> 
                 <div class="button-wrapper">
-                  <button onclick="" class="detectbutton">Explore</button> 
+                  <button onclick="" class="detectbutton ">Explore</button> 
               </div>
             </div>
-            <div class="col-md-6 col-sm-12"> 
-              <img src="images/plantIdentification.jpg" alt="" class="plantpic">
+            <div class="col-md-6 col-sm-12 slide-in from-right "> 
+              <img src="images/plantIdentification.jpg" alt="" class="plantpic ">
           </div>
         </div>
         
@@ -282,68 +360,61 @@
       
 
         
-          <div class="image-with-text before-footer">
+          <div class="image-with-text before-footer ">
             <img src="images/green-monstera-leaves-nature.jpg" alt="Your Image">
-            <div class="text-overlay2">
+            <div class="text-overlay2 fade-in">
               <h1>Leafy</h1>
               <h3>We Provide our customer with premium plant collection, tools for gardening, and tool for detecting their plants!</h3>
               <p>"Green Innovation Powered By Intellegence Growth"</p>
             </div>
           </div>
 
-        
-       
-        <footer class="footer">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-3">
-                <h5>Get in touch</h5>
-                <ul>
-                  <li><a href="/">Home</a></li>
-                  <li><a href="/about-us/">About us</a></li>
-                  <li><a href="/contact-us/">Contact us</a></li>
-                  <li><a href="/faq/">FAQ</a></li>
-                </ul>
-              </div>
-              <div class="col-md-3">
-                <h5>Need Help?</h5>
-                <ul>
-                  <li><a href="/guides/">Leafy Guides</a></li>
-                  <li><a href="/payment-policy/">Payment policy</a></li>
-                  <li><a href="/shipping-policy/">Shipping policy</a></li>
-                  <li><a href="/returns-policy/">Returns policy</a></li>
-                  <li><a href="/terms-of-service/">Terms of service</a></li>
-                  <li><a href="/privacy-policy/">Privacy policy</a></li>
-                </ul>
-              </div>
-              <div class="col-md-3">
-                <h5>Sell with us</h5>
-                <ul>
-                  <li><a href="/sell-with-us/">Sell with us</a></li>
-                </ul>
-                <h5>Wholesale</h5>
-                <ul>
-                  <li><a href="/bulk-orders/">Bulk Orders</a></li>
-                </ul>
-              </div>
-              <div class="col-md-3">
-                <h5>Social media</h5>
-                <ul>
-                  <li><a target="" href="">Facebook</a></li>
-                  <li><a target="" href="">Instagram</a></li>
-                </ul>
-                <h5>Jobs at Leafy</h5>
-                <ul>
-                  <li><a href="/jobs/">Jobs</a></li>
-                </ul>
+          <footer class="footer">
+            <div class="container cont">
+              <div class="row foot-row">
+                <div class="footer-col">
+                  <h4>Get in touch</h4>
+                  <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Home</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>Let us help</h4>
+                  <ul>
+                    <li><a href="#">Leafy guides</a></li>
+                    <li><a href="#">Payment policy</a></li>
+                    <li><a href="#">Shipping policy</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Terms of service</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>Work with us</h4>
+                  <ul>
+                    <li><a href="#">jobs</a></li>
+                    <li><a href="#">Sell with us</a></li>
+                    
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>follow us</h4>
+                  <div class="social-links">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </footer>
-        
-
+         </footer>
+       
    
-      <footer class="copyright">
+   
+     <footer class="copyright">
           <div class="container">
               <div>Copyright © 2024 - Leafy. All rights reserved. </div>
           
@@ -358,7 +429,8 @@
      
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="scripts/animate.js"></script>
+    <script src="scripts/headerAnimation.js"></script>
     
 </body>
 </html>
