@@ -1,0 +1,117 @@
+
+.button{
+background-color: rgb(41, 112, 69);
+color: white;
+font-weight: 700;
+width: 200px;
+height: 50px;
+font-size: 20px;
+
+
+}
+.button:hover{
+    background-color:rgb(39, 77, 53) ;
+}
+.btn-primary:active,
+    .btn-primary:focus
+    {
+        background-color: rgb(10, 30, 17) !important; 
+    }
+
+    
+.btndiv{
+    text-align: center;
+    padding-top: 50px;
+}
+.img-container {
+    position: relative;
+   
+    
+}
+
+.img-overlay {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(20, 54, 33);
+    font-size: 30px;
+    font-weight: 900;
+   
+    
+}
+.image
+{
+    height: 500px;
+    width: 1500px;
+    border-radius: 15px;
+}
+.cont{
+    border-radius: 15px;
+}
+
+.form-control
+{
+    height: 42px;
+}
+.google-btn {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #333;
+    padding: 10px 30px 10px 30px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+   
+ 
+}
+.google-btn:hover
+{
+    border: 1px solid #ccc;
+}
+.btnn
+{
+    display: flex;
+    justify-content: center;
+}
+
+.google-btn img {
+    max-width: 25px;
+}
+a
+{
+    text-decoration: none;
+    color:rgb(105, 130, 62);
+}
+
+@media (max-width: 767px) {
+    .img-container {
+        display: none;
+    }
+
+    .col-md-6 {
+        border-radius: 15px;
+        height: auto;
+        padding: 20px; 
+    }
+
+    .cont {
+        border-radius: 15px;
+    }
+   
+   
+    .google-btn {
+        font-size: 20px;
+        padding: 10px 20px;
+
+    }
+
+    
+   
+}
+
+
+

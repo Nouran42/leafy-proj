@@ -1,0 +1,175 @@
+.admin-dashboard {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: url(../images/monstera-leaves-with-palm-leaves-shadow-gray-background.jpg);
+    background-size:cover;
+    background-repeat: repeat-y;
+}
+
+.admin-dashboard h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: rgb(15, 60, 15);
+}
+
+
+
+.admin-dashboard .modal-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-dashboard .modal-body {
+    padding: 20px;
+}
+
+.admin-dashboard {
+    padding: 2rem;
+}
+
+.admin-dashboard .table {
+    width: 100%;
+    margin: auto;
+}
+
+.admin-dashboard .btn {
+    width: 70px;
+    font-size: 0.8rem;
+}
+.titledash
+{
+    color: rgb(102, 134, 93);
+}
+
+
+.dashth{
+   
+    background-color:rgb(32, 63, 21) !important ;
+    color: white !important;
+
+}
+.dashheader
+{
+    color: rgb(24, 52, 14);;
+}
+.buttonupdate
+{
+    background-color: green;
+    color: white;
+}
+.buttonupdate:hover
+{
+    background-color: rgb(12, 33, 12);
+    color: white;
+}
+.loading, .error {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.confirmation-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+}
+
+.confirmation-container h1 {
+    color: #568962;
+    text-align: center;
+}
+
+.confirmation-container .alert {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.confirmation-container .customer-details, .confirmation-container .order-details {
+    margin-top: 30px;
+    margin-bottom: 10px;
+ 
+}
+
+.confirmation-container .product-detail {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.confirmation-container p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.confirmation-container strong {
+    font-weight: 600;
+}
+
+/* Add this to your style3.css or any other CSS file you are using */
+
+.out-of-stock .card {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.badge.bg-danger {
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+.image-container-link {
+    pointer-events: none;
+}
+
+/* style2.css */
+
+.btnnnnn {
+    background-color: #5f885b;
+    border-color: #000000;
+  }
+  
+  .btnnnnn:hover {
+    background-color: #020508;
+    border-color: #000000;
+    color: white;
+  }
+  
+  .img-preview {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    margin-top: 10px;
+  }
+  
+  .upload-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btncont {
+    margin-top: 20px;
+  }
+  
+  .prediction-result {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .detP
+  {
+    color: #397c49;
+  }

@@ -1,0 +1,1375 @@
+
+  *
+  {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+
+  } 
+   
+  /* .navbar-nav {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .navbar-nav .nav-link {
+        color: white !important;
+        margin: 0px 35px;
+        font-size: 22px;
+        transition: color 0.3s; 
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: rgb(62, 65, 62) !important; 
+    }
+
+    .navv {
+        background-color: rgb(107, 141, 110);
+    }
+    .wrapper
+    {
+      width: 95%;
+     
+   
+      position: relative;
+      margin-left: 14em;
+     
+    }
+    
+   *//* .firstnav
+    {
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+      height: 100%; 
+    }*/ 
+@keyframes fade-up{
+  0%{
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+@keyframes fade-down
+{
+  0%{
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+
+}
+.intro 
+{
+  animation: fade-up 0.5s;
+  
+}
+.intro2
+{
+  animation: fade-down 0.5s ;
+}
+
+.fade-in
+{
+opacity: 0;
+transition: opacity 250ms ease-in;
+}
+.fade-in.appear
+{
+  opacity: 1;
+}
+.from-left{
+  transform: translateX(-50%);
+}
+.from-right
+{
+  transform: translateX(50%);
+}
+.from-left,
+.from-right
+{
+  transition: opacity 200ms ease-in, transform 400ms ease-in;
+  opacity: 0;
+}
+
+.from-left.appear,
+.from-right.appear
+{
+  transform: translateX(0);
+  opacity: 1;
+}
+    /*  #search-container
+    {
+      margin: 1em 0;
+      display: flex;
+      align-items: center;
+    }
+  #search-container input
+    {
+      background-color: transparent;
+      width: 40%;
+      border-bottom:2px solid #110f29;
+      padding: 1em 0.3em;
+    }
+    #search-container input:focus
+    {
+      border-bottom-color: #739b7e;
+    }
+    #search-container button{
+      padding: 0.7em 2em;
+      margin-left: 1em;
+      background-color: #739b7e;
+      color:#ffff;
+      border-radius: 5px;
+      margin-top: 0.5em;
+    }
+*/
+.allprod
+{
+  background-color: white;
+  margin-left: 25px;
+}
+    .inner
+    {
+        max-width: 200px; 
+        margin: 0 auto; 
+        padding: 20px 0; 
+        text-align: center; 
+    }
+
+
+    .navbar-brand
+    { 
+        width: 100%;
+        height: 100%;
+       
+    
+    }
+    .navbar
+    {
+        margin-bottom: 0 !important;
+    }
+    .middleimg {
+        max-width: 100%; 
+        height: auto; 
+        opacity: 0.5;
+    }
+    .middleimg:hover {
+        opacity: 1;
+        transition: 0.45s;
+
+    }
+
+
+    .homebtn
+    {
+        border: none;
+        background-color: white;
+    }
+    .container
+    {
+        display: flex;
+        min-height: 0px;
+    }
+    
+    .Guides
+    {
+        background-image: url(../images/monstera-leaves-with-palm-leaves-shadow-gray-background.jpg);
+        background-size:cover;
+    }
+    .titles
+    {
+        text-decoration:underline black;
+    }
+    .logos
+    {
+      background-color: white;
+      border: none;
+    }
+    .logos:hover{
+      background-color: transparent;
+    }
+    .logos:focus{
+      background-color: transparent;
+    }
+   
+
+.guide-link:hover img {
+    filter: brightness(50%);
+    transition: 0.45s;
+}
+    
+    .text-block {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        background-color: rgb(95, 127, 101,.85);
+        color: white;
+        padding-left: 20px; 
+        padding-right: 20px;
+        padding-top: 10px;
+        border: white solid 5px ;
+        font-weight: bold;
+      
+      }
+    
+  .gifts{
+    text-decoration: none;
+    color: black;
+  }
+
+  .before-footer img
+  {
+    filter: brightness(70%);
+   
+  }
+  .no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+    
+  }
+  
+  .image-with-text {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-with-text img {
+    width: 100%;
+    height: auto;
+   
+  }
+  
+  .text-overlay2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .text-overlay2 h1 {
+    font-size: 70px;
+    margin-bottom: 30px;
+    font-weight: 700;
+  }
+  
+  .text-overlay2 h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .text-overlay2 p {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+  
+  .cont{
+    max-width: 1700px;
+    margin: auto;
+  
+  }
+  .foot-row{
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  .footer-col ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .footer{
+    background-color:#739b7e;
+      padding: 70px 0;
+  }
+  .footer-col{
+     width: 40%;
+     padding: 0 15px;
+  
+  }
+  
+  .footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #485545;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #e7e7e7;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  .footer-col .social-links a{
+    display: inline-block !important;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+  }
+  
+  /*responsive*/
+  @media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+      margin-left: 0;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }
+.copyright{
+    background-color: #444;
+}
+.copyright div
+{
+    width: 100%;
+    color: #ccc;
+    text-align: center !important;
+}
+.plantpic{
+    border-radius: 50%;
+    border: 4px solid #739b7e;
+    padding: 20px; 
+}
+
+.detect {
+    background-image: url(../images/monstera-leaves-with-palm-leaves-shadow-gray-background.jpg);
+    padding: 50px;
+    background-size: cover;
+    position: relative;
+}
+
+
+.detectp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+    text-align: center;
+}
+
+.detectp h2 {
+    font-weight: 800;
+}
+
+.button-wrapper {
+    margin-top: 20px;
+}
+.collapse button
+{
+  color: #444;
+}
+
+.detectbutton {
+    background-color: #444;
+    color: white;
+    border: 2px solid #444;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.detectbutton:hover {
+    background-color: #000000;
+    border-color: #555;
+    color: #fff;
+}
+
+
+.productimg1:hover{
+    content: url(../images/asianbayberry2.jpg);
+ 
+
+}
+
+
+.productimg72:hover{
+    content: url(../images/yellowelder2.jpg);
+  
+
+}
+
+.productimg73:hover{
+    content: url(../images/nerveplant2.jpg);
+  
+    
+
+}
+.productimg74:hover{
+    content: url(../images/redstar2.jpg);
+  
+
+}
+
+.productimg75:hover{
+    content: url(../images/ficushawaii2.jpg);
+  
+    
+   
+
+}
+
+.productimg76:hover{
+    content: url(../images/aloevera2.jpg);
+ 
+   
+
+}
+
+.productimg77:hover{
+    content: url(../images/murraya2.jpg);
+  
+    
+   
+
+}
+.productimg78:hover{
+    content: url(../images/warneckii2.jpg);
+  
+    
+   
+
+}
+.productimg79:hover{
+    content: url(../images/songofindia2.jpg);
+  
+    
+   
+
+}
+
+.productimg80:hover{
+  content: url(../images/lacefern2.jpg);
+
+  
+ 
+
+}
+
+.productimg81:hover{
+  content: url(../images/snakeplant2.jpg);
+
+  
+ 
+
+}
+.productimg82:hover{
+  content: url(../images/goldenpothos2.jpg);
+
+  
+ 
+
+}
+.productimg83:hover{
+  content: url(../images/peacelily2.jpg);
+
+  
+ 
+
+}
+.productimg84:hover{
+  content: url(../images/montaseraadansonii2.jpg);
+
+  
+ 
+
+}
+.productimg85:hover{
+  content: url(../images/pothosnjoy2.jpg);
+
+  
+ 
+
+}
+.productimg86:hover{
+  content: url(../images/zanzibargemraven2.jpg);
+
+  
+ 
+
+}
+.productimg87:hover{
+  content: url(../images/bostonfern2.jpg);
+
+  
+ 
+
+}
+.productimg88:hover{
+  content: url(../images/foxtailfern2.jpg);
+
+  
+ 
+
+}
+.productimg89:hover{
+  content: url(../images/luckybamboo2.jpg);
+
+  
+ 
+
+}
+
+.productimg90:hover{
+  content: url(../images/bamboopalm2.jpg);
+
+  
+ 
+
+}
+.productimg91:hover{
+  content: url(../images/travellerspalm2.jpg);
+
+  
+ 
+
+}
+.productimg92:hover{
+  content: url(../images/ponytailpalm2.jpg);
+
+  
+ 
+
+}
+.productimg93:hover{
+  content: url(../images/arecapalm2.jpg);
+
+  
+ 
+
+}
+.productimg94:hover{
+  content: url(../images/bunnyearscactus2.jpg);
+
+  
+ 
+
+}
+.productimg95:hover{
+  content: url(../images/hairbrushcactus2.jpg);
+
+  
+ 
+
+}
+
+.productimg96:hover{
+  content: url(../images/cherrytomatoseeds2.jpg);
+
+  
+
+}
+.productimg97:hover{
+  content: url(../images/tomatoseeds2.jpg);
+
+  
+
+}
+.productimg98:hover{
+  content: url(../images/cantaloupeseeds2.jpg);
+
+  
+
+}
+.productimg99:hover{
+  content: url(../images/strawberryseeds2.jpg);
+
+  
+
+}
+.productimg100:hover{
+  content: url(../images/cucumberseeds2.jpg);
+
+  
+
+}
+.productimg101:hover{
+  content: url(../images/celeryseeds2.jpg);
+
+  
+
+}
+.productimg102:hover{
+  content: url(../images/eggplantseeds2.jpg);
+
+  
+
+}
+.productimg103:hover{
+  content: url(../images/lettuceseeds2.jpg);
+
+  
+
+}
+.productimg104:hover{
+  content: url(../images/zucchiniseeds2.jpg);
+
+  
+
+}
+
+.productimg105:hover{
+  content: url(../images/carrotseeds2.jpg);
+
+  
+
+}
+
+.productimg106:hover{
+  content: url(../images/basilseeds2.jpg);
+
+  
+
+}
+
+.productimg107:hover{
+  content: url(../images/chiveseeds2.jpg);
+
+  
+
+}
+
+.productimg108:hover{
+  content: url(../images/dillseeds2.jpg);
+
+  
+
+}
+.productimg109:hover{
+  content: url(../images/parsleyseeds2.jpg);
+
+  
+
+}
+
+.productimg110:hover{
+  content: url(../images/thymeseeds2.jpg);
+
+  
+
+}
+
+.productimg111:hover{
+  content: url(../images/claypeppels2.jpg);
+
+  
+
+}
+.productimg112:hover{
+  content: url(../images/cocopeat2.jpg);
+
+  
+
+}
+.productimg113:hover{
+  content: url(../images/perlite2.jpg);
+
+  
+
+}
+.productimg114:hover{
+  content: url(../images/pottingsoil2.jpg);
+
+  
+
+}
+.productimg115:hover{
+  content: url(../images/seedstartingmix2.jpg);
+
+  
+
+}
+.productimg116:hover{
+  content: url(../images/vermiculite2.jpg);
+
+  
+
+}
+.productimg117:hover{
+  content: url(../images/9wayspraynozzle2.jpg);
+
+  
+
+}
+.productimg118:hover{
+  content: url(../images/gardenfork2.jpg);
+
+  
+
+}
+.productimg119:hover{
+  content: url(../images/gardenhandtrowel2.jpg);
+
+  
+
+}
+
+.productimg120:hover{
+  content: url(../images/gardenhat2.jpg);
+
+  
+
+}
+
+.productimg121:hover{
+  content: url(../images/gardeninggloves2.jpg);
+
+  
+
+}
+
+.productimg122:hover{
+  content: url(../images/plantstake2.jpg);
+
+  
+
+}
+
+.productimg123:hover{
+  content: url(../images/pruningshears2.jpg);
+
+  
+
+}
+
+
+.productimg124:hover{
+  content: url(../images/wheelbarrow2.jpg);
+
+  
+
+}
+.productimg125:hover{
+  content: url(../images/jackpot1.png);
+
+  
+
+}
+.productimg126:hover{
+  content: url(../images/cubey1.png);
+
+  
+
+}
+.productimg127:hover{
+  content: url(../images/terra1.png);
+
+  
+
+}
+.productimg128:hover{
+  content: url(../images/chinese1.jpeg);
+
+  
+
+}
+.productimg129:hover{
+  content: url(../images/riva1.png);
+
+  
+
+}
+.productimg130:hover{
+  content: url(../images/poly1.png);
+
+  
+
+}
+.productimg131:hover{
+  content: url(../images/black1.png);
+
+  
+
+}
+.productimg132:hover{
+  content: url(../images/dore1.jpeg);
+
+  
+
+}
+.productimg133:hover{
+  content: url(../images/luna1.png);
+
+  
+
+}
+.productimg134:hover{
+  content: url(../images/louza1.png);
+
+  
+
+}
+.productimg135:hover{
+  content: url(../images/fifi1.jpeg);
+
+  
+
+}
+.productimg136:hover{
+  content: url(../images/mini1.png);
+
+  
+
+}
+.productimg137:hover{
+  content: url(../images/plastic1.png);
+
+  
+
+}
+.productimg138:hover{
+  content: url(../images/joly1.png);
+
+  
+
+}
+.productimg139:hover{
+  content: url(../images/zaha1.png);
+
+  
+
+}
+
+.container-fluid {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand {
+  margin-right: auto; 
+}
+
+.productcard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between cards */
+  
+
+}
+
+.prodcard {
+  flex: 1 1 calc(33.333% - 20px); /* Flex-basis for 3 columns */
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+  height: auto;
+  
+}
+.prodcard img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1; /* Adjust to desired aspect ratio (e.g., 4/3, 16/9) */
+  object-fit: cover;
+  border-radius: 8px; /* Optional: for rounded corners */
+}
+
+.productcard .product-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+.productcard .product-price {
+  font-size: 14px;
+  color: #666;
+}
+.productcard a
+{
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+  .productcard .card {
+      flex: 1 1 calc(50% - 20px); /* Two columns on smaller screens */
+      width: 195px;
+  }
+}
+
+@media (max-width: 576px) {
+  .productcard .card {
+      flex: 1 1 calc(100% - 20px); /* One column on extra small screens */
+      width: 195px;
+  }
+}
+
+.card-body h5
+{
+font-weight:500;
+color: rgb(95, 127, 101);
+}
+.listings h2{
+    color: rgb(95, 127, 101);
+}
+
+.bar-styling {
+    list-style-type: none;
+    padding: 0;
+}
+
+.bar-styling li {
+    display: inline;
+    margin: 0 5px;
+}
+
+
+.page-numbers:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+.current
+{
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #4d7650;
+    border: 2px solid #000000;
+    border-radius: 5px;
+  
+
+}  
+.accordion-button:focus {
+  border-color: #739b7e;
+  box-shadow: 0 0 0 0.2rem rgba(115, 155, 126, 0.5);
+}
+.button-value {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  text-align: left;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+
+.accordion {
+    width: 100%;
+ 
+    margin-right:20px ;
+  }
+  
+  .accordion-item {
+    margin-bottom: 10px;
+  }
+  
+  .accordion-header {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .accordion-button {
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    color: #4d7650;
+    cursor: pointer;
+  }
+  
+  .accordion-button.collapsed {
+    background-color: #ffffff;
+  }
+  
+  .accordion-button:not(.collapsed) {
+    background-color: #ffffff;
+  }
+  
+  .accordion-body {
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    background-color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  
+  .accordion-body ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+
+  .accordion-body ul li {
+    margin-bottom: 5px;
+  }
+  
+
+  .accordion-body ul li button {
+    color: #525252;
+    text-decoration: none;
+    background-color: white;
+ }
+
+ .button-value:active {
+  color: #739b7e !important;
+}
+ .hide
+ {
+  display: none;
+ }
+ .hidden
+ {
+  display: none;
+}
+
+ .accordion-body ul li a
+ {
+  text-decoration: none;
+ }
+  
+ 
+  .accordion-body ul li button:hover {
+    text-decoration:none ;
+    
+  }
+  
+
+  .accordion-body ul li hr {
+    margin: 5px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+  }
+  .listings
+  {
+    margin-left: 80px;
+  }
+.listings .row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.primary-header {
+  --_bg: hsl(0 0% 100%);
+  --_logo-color: hsl(0, 0%, 5%);
+  --_nav-link-color: hsl(120, 48%, 10%);
+
+  padding: 1rem;
+  background: var(--_bg);
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.primary-header,
+.primary-header * {
+  transition: 500ms;
+}
+
+.primary-header.sticking {
+  --_bg: #364e32;
+  --_logo-color: #fff;
+  --_nav-link-color: rgb(255, 255, 255);
+}
+
+.primary-header__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.primary-header a {
+  color: var(--_nav-link-color);
+  text-decoration: none;
+
+}
+
+.primary-header a:hover,
+.primary-header a:focus {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.logo {
+  color: var(--_logo-color);
+  }
+.logo img {
+  width: 350px;
+  height: auto; 
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  display: flex;
+  gap: clamp(0.5rem, 5vw, 2rem);
+}
+
+:root {
+  --color-scheme: var(--dark-mode);
+
+  --font-family: system-ui;
+
+  --fs-300: clamp(0.94rem, calc(0.92rem + 0.08vw), 0.98rem);
+  --fs-400: clamp(1.13rem, calc(1.06rem + 0.33vw), 1.31rem);
+  --fs-500: clamp(1.35rem, calc(1.21rem + 0.69vw), 1.75rem);
+  --fs-600: clamp(1.62rem, calc(1.37rem + 1.24vw), 2.33rem);
+  --fs-700: clamp(1.94rem, calc(1.54rem + 2.03vw), 3.11rem);
+  --fs-800: clamp(2.33rem, calc(1.7rem + 3.15vw), 4.14rem);
+  --fs-900: clamp(2.8rem, calc(1.85rem + 4.74vw), 5.52rem);
+
+  --clr-primary-300: hsl(219, 76%, 55%);
+  --clr-primary-400: hsl(219, 76%, 40%);
+  --clr-primary-500: hsl(219, 76%, 25%);
+  --clr-secondary-300: hsl(269, 75%, 55%);
+  --clr-secondary-400: hsl(269, 75%, 40%);
+  --clr-secondary-500: hsl(269, 75%, 25%);
+  --clr-accent-300: hsl(358, 72%, 65%);
+  --clr-accent-400: hsl(358, 72%, 50%);
+  --clr-accent-500: hsl(358, 72%, 35%);
+
+ 
+  --no-dark-mode: light;
+  --dark-mode: dark light;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+.wrapper2 {
+  width: min(95rem, 100% - 2rem);
+  margin-inline: auto;
+}
+.btncolorr
+{
+  color: white;
+  border-color: white;
+  background-color: #364e32;
+}
+.btncolorr:hover{
+ background-color: rgb(25, 33, 22);
+ color:white;
+ border-color: white;
+
+}
+
+.site-title {
+  font-size: var(--fs-900);
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-size: var(--fs-800);
+  line-height: 1.1;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.more-attributes {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.more-attributes .table {
+  margin: 0 auto;
+  width: auto;
+}
+
+
+.more-attributes .row {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.more-attributes th {
+  vertical-align: middle;
+  text-align: right;
+  padding: 20px;
+}
+.more-attributes td 
+{
+  vertical-align: middle;
+  text-align: left;
+  padding: 20px;
+}
+
+.attribute-icon {
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+@media (max-width: 768px) {
+    .image-with-text {
+       
+        background-size:cover;
+        background-position: top;
+      }
+    
+      .text-overlay2 {
+        padding: 10px;
+      }
+    
+      .text-overlay2 h1 {
+        font-size: 20px;
+        margin-bottom: 5px;
+      }
+    
+      .text-overlay2 h3 {
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
+    
+      .text-overlay2 p {
+        font-size: 12px;
+      }
+    
+    .detect img {
+        display: none; 
+    }
+    
+    .productcard img
+    {
+        width: 200px;
+        height: 200px;
+    }
+    .productimg1:hover, .productimg2:hover, .productimg3:hover, .productimg4:hover,.productimg5:hover,.productimg6:hover,.productimg7:hover{
+        background-color: transparent;
+    }
+
+    
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+        
+    
+    }
+
+    .cart-logo, .account-logo {
+        width: 20px; 
+        height: 20px; 
+        margin-bottom: 20px;
+        padding-bottom: 0.3em;
+    }
+
+  
+    .iconn {
+        display: none !important;
+    }
+  
+   /* .col-md-2 {
+        
+        flex: 0 0 calc(16.666% - 20px); 
+        max-width: calc(16.666% - 20px);
+        margin: 10px; 
+        margin-bottom: 10px;
+    
+    }
+    */
+    
+  /*    .category label {
+        font-size: 0.85rem; 
+      }
+    
+      .category option {
+        font-size: 0.85rem;
+        padding: 0.375rem 0.25rem;
+      }
+
+*/
+
+
+}
+
+    @media screen and (max-width: 992px) {
+        .category{
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    
+        .listings {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-left: 0px;
+        }
+    }
+    body {
+        font-family: 'verdana';
+    }
+
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x:hidden ;
+
+    }
+    html
+    {
+      scroll-behavior: smooth;
+    }
